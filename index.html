@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>TrainTrax</title>
+    <meta name="author" content="xanimo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,600|Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Train<span>Trax</span></h1>
+        <h3>Schedules</h3>
+      </div> <!-- End header container -->
+    </header>
+    <main class="container">
+      <h2>Current Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Destination</th>
+            <th>Frequency</th>
+            <th>Arrival</th>
+            <th>Departs</th>
+            <th>Edit/Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6"><strong>Note:</strong> Click the trash icon to delete a schedule or pencil icon to edit in the form below. Arrival times will update automatically every 60 seconds.</td>
+          </tr>
+        </tfoot>
+      </table>
+      <h2>Add/Edit Train</h2>
+      <form id="train-input">
+        <div class="form-block">
+          <label for="train-name">Train Name</label>
+          <input id="train-name" type="text" placeholder="Acela Express" required>
+        </div> <!-- End form-block -->
+        <div class="form-block">
+          <label for="train-dest">Destination</label>
+          <input id="train-dest" type="text" placeholder="Boston, MA" required>
+        </div> <!-- End form-block -->
+        <div class="form-block">
+          <fieldset>
+            <legend>First Train Time</legend>
+            <label for="train-hr">Hour</label>
+            <select id="train-hr">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6" selected>6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <label for="train-min">Min</label>
+            <select id="train-min">
+              <option value="0" selected>00</option>
+              <option value="5">05</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+              <option value="40">40</option>
+              <option value="45">45</option>
+              <option value="50">50</option>
+              <option value="55">55</option>
+            </select>
+            <input id="train-am" type="radio" name="train-per" value="1" checked="checked">
+            <label for="train-am">AM</label>
+            <input id="train-pm" type="radio" name="train-per" value="2">
+            <label for="train-pm">PM</label>
+          </fieldset>
+        </div> <!-- End form-block -->
+        <div class="form-block">
+          <fieldset>
+            <legend>Frequency</legend>
+            <label for="freq-hrs">Hours</label>
+            <input id="freq-hrs" type="number" min="0" max="24" value="1" required>
+            <label for="freq-mins">Mins</label>
+            <input id="freq-mins" type="number" min="0" max="59" value="0" required>
+          </fieldset>
+        </div> <!-- End form-block -->
+        <div class="form-block">
+          <button id="train-add-btn" type="submit" name="add">Add</button>
+          <button id="train-save-btn" style="display: none" type="submit" name="save">Save</button>
+          <button id="train-cancel-btn" type="button">Cancel</button>
+        </div> <!-- End form-block -->
+      </form>
+    </main> <!-- End main container -->
+    <footer id="link-to-bottom">
+      <div class="container">
+        <p>&copy; 2017</p>
+      </div> <!-- End footer container -->
+    </footer>
+    <div class="overlay">
+      <div class="alert-container">
+        <h3>Invalid Entry</h3>
+        <p id="alert"></p>
+        <button id="ok-btn" type="button">OK</button>
+      </div> <!-- End alerts -->
+    </div> <!-- End overlay -->
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script type="text/javascript" src="assets/js/moment-timer.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  </body>
+</html>

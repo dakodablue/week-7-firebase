@@ -1,0 +1,16 @@
+/* Form Styles
+   ------------------------- */
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .form-block {
+    width: 50%;
+    padding: 0.5rem;
+  }
+  fieldset {
+    height: 80px;
+    border: 1px solid $color-border;
+  }
+}

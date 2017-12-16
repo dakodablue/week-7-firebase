@@ -1,0 +1,39 @@
+/* Input Styles
+   ------------------------- */
+
+.form-block {
+  > label {
+    display: block;
+    font-weight: 600;
+    padding: 0.5rem 0;
+  }
+  > input {
+    width: 100%;
+  }
+}
+input {
+  padding: 0.5rem;
+  border: none;
+  border: 1px solid $color-border-input;
+  border-radius: 5px;
+}
+fieldset {
+  legend {
+    font-weight: 600;
+    padding: 0 0.25rem;
+  }
+  select {
+    width: 52px;
+    height: 34px;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+  }
+  label[for="train-am"] {
+    margin-right: 0.25rem;
+  }
+  input[type="number"] {
+    width: 56px;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+  }
+}

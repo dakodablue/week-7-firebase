@@ -1,0 +1,30 @@
+/* Variables
+   ------------------------- */
+
+// Functional color variables
+
+$color-text-light: #fff;
+$color-text-dark: #222;
+
+$color-accent: #f45b69;
+$color-border: #13293d;
+$color-border-input: #a6a6a6;
+$color-shadow: #010c1a;
+
+$color-bg-body: #e8f1f2;
+$color-bg-banner: #13293d;
+$color-bg-heading: #13818d;
+
+// Font stacks
+
+$stack-heading: 'Lato', sans-serif;
+$stack-body: 'Fira Sans Extra Condensed', sans-serif;
+
+// Max and min widths
+
+$max: 1000px;
+$min: 667px; // iPhone 6 in landscape
+
+// Media query breakpoints
+
+$tablet-width: 768px;

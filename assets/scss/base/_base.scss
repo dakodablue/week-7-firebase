@@ -1,0 +1,40 @@
+/* Base Element Styles
+   ------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: $stack-body;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: $color-bg-body;
+  color: $color-text-dark;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+  background-color: $color-bg-heading;
+  color: $color-text-light;
+  margin-top: 2.5rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 8px 6px -6px $color-shadow;
+}

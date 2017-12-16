@@ -1,0 +1,47 @@
+/* Table Styles
+   ------------------------- */
+
+table {
+  width: 100%;
+  border-spacing: 0px;
+  th {
+    width: 16.5%;
+    text-align: left;
+    padding: 0.5rem;
+    padding-top: 1rem;
+  }
+  th:first-child {
+    width: 24%;
+  }
+  th:last-child {
+    width: 10%;
+  }
+  td {
+    padding: 0.25rem 0.5rem;
+    border-top: 1px solid $color-border;
+    .edit,
+    .delete {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.4s ease-out;
+      &:hover {
+        opacity: 1;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .edit {
+      margin-right: 0.5rem;
+    }
+  }
+  tfoot {
+    td {
+      border-top: none;
+      padding-top: 1rem;
+    }
+  }
+}

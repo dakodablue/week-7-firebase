@@ -1,0 +1,214 @@
+/* Global Imports
+   ------------------------- */
+/* Base Imports
+   ------------------------- */
+/* Variables
+   ------------------------- */
+/* Base Element Styles
+   ------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #e8f1f2;
+  color: #222; }
+
+main {
+  flex-grow: 1; }
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+  background-color: #13818d;
+  color: #fff;
+  margin-top: 2.5rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 8px 6px -6px #010c1a; }
+
+/* Layout Imports
+   ------------------------- */
+/* Container Styles
+   ------------------------- */
+.container {
+  max-width: 1000px;
+  min-width: 667px;
+  padding: 0 1rem;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 2rem; } }
+
+/* Header Styles
+   ------------------------- */
+header {
+  min-width: 667px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: #13293d;
+  color: #fff;
+  padding: 2rem 0 2.5rem; }
+  header #logo {
+    width: 144px;
+    height: 144px; }
+  header span {
+    color: #f45b69; }
+  header h3 {
+    font-weight: 400;
+    letter-spacing: 0.05rem; }
+
+/* Table Styles
+   ------------------------- */
+table {
+  width: 100%;
+  border-spacing: 0px; }
+  table th {
+    width: 16.5%;
+    text-align: left;
+    padding: 0.5rem;
+    padding-top: 1rem; }
+  table th:first-child {
+    width: 24%; }
+  table th:last-child {
+    width: 10%; }
+  table td {
+    padding: 0.25rem 0.5rem;
+    border-top: 1px solid #13293d; }
+    table td .edit,
+    table td .delete {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.4s ease-out; }
+      table td .edit:hover,
+      table td .delete:hover {
+        opacity: 1; }
+      table td .edit img,
+      table td .delete img {
+        width: 100%; }
+    table td .edit {
+      margin-right: 0.5rem; }
+  table tfoot td {
+    border-top: none;
+    padding-top: 1rem; }
+
+/* Form Styles
+   ------------------------- */
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  form .form-block {
+    width: 50%;
+    padding: 0.5rem; }
+  form fieldset {
+    height: 80px;
+    border: 1px solid #13293d; }
+
+/* Footer Styles
+   ------------------------- */
+footer {
+  min-width: 667px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: #13293d;
+  color: #fff;
+  margin-top: 4rem;
+  padding: 2rem 0; }
+
+/* Overlay Styles
+   ------------------------- */
+.overlay {
+  position: fixed;
+  display: none;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  font-family: "Lato", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  background-color: rgba(1, 12, 26, 0.5);
+  z-index: 100; }
+  .overlay .alert-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 50%;
+    left: 50%;
+    background-color: #e8f1f2;
+    padding: 2rem;
+    transform: translate(-50%, -50%); }
+    .overlay .alert-container h3 {
+      font-size: 1.5rem;
+      padding-bottom: 1rem; }
+    .overlay .alert-container button {
+      align-self: flex-end; }
+
+/* Components Imports
+   ------------------------- */
+/* Input Styles
+   ------------------------- */
+.form-block > label {
+  display: block;
+  font-weight: 600;
+  padding: 0.5rem 0; }
+.form-block > input {
+  width: 100%; }
+
+input {
+  padding: 0.5rem;
+  border: none;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px; }
+
+fieldset legend {
+  font-weight: 600;
+  padding: 0 0.25rem; }
+fieldset select {
+  width: 52px;
+  height: 34px;
+  margin-left: 0.25rem;
+  margin-right: 0.5rem; }
+fieldset label[for="train-am"] {
+  margin-right: 0.25rem; }
+fieldset input[type="number"] {
+  width: 56px;
+  margin-left: 0.25rem;
+  margin-right: 0.5rem; }
+
+/* Button Styles
+   ------------------------- */
+button {
+  min-width: 100px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 0.5rem 1.25rem;
+  background-color: #f45b69;
+  color: #fff;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  transition: background-color 0.4s ease-out; }
+  button:hover {
+    background-color: #da0f21; }
+
+/*# sourceMappingURL=styles.css.map */

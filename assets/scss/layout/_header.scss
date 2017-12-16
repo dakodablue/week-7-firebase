@@ -1,0 +1,22 @@
+/* Header Styles
+   ------------------------- */
+
+header {
+  min-width: $min;
+  font-family: $stack-heading;
+  text-align: center;
+  background-color: $color-bg-banner;
+  color: $color-text-light;
+  padding: 2rem 0 2.5rem;
+  #logo {
+    width: 144px;
+    height: 144px;
+  }
+  span {
+    color: $color-accent;
+  }
+  h3 {
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+  }
+}
